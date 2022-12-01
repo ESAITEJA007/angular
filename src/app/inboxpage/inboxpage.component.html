@@ -1,3 +1,29 @@
 <p>inboxpage works!</p>
 <button [disabled]="isDisabled">I am disabled</button>
+<label>Enter Your Name</label>
+<input (keyup)="0" #name>
+<p>Welcome {{name.value}} </p>
+<p>Evaluate: {{variable | uppercase}}</p>
+<p ngNonBindable>Do not evaluate: {{variable}}</p>
+ <p>{{variable}}</p>
+ <button (click)="clickMe()">Click Me</button>
+ <p>You have clicked {{clickCount}}</p>
 
+ <div>
+    <p>
+      Count: {{ count }}
+      <button (click)="increment()">Increment</button>
+      <button (click)="decrement()">Decrement</button>
+      <button (click)="clear()">clear</button>
+      
+    </p>
+  </div>
+Name:
+  <input type="text" name="name" ngModel (ngModelChange)="nameChanged($event)">
+ 
+
+  Name Chnage Event
+  <input type="text" name="name1" (change)="name1Changed($event)">
+
+
+  <br>

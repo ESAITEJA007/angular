@@ -7,19 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FooterComponent } from './footer/footer.component';
 import { InboxpageComponent } from './inboxpage/inboxpage.component';
+import { FormsModule } from '@angular/forms';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    InboxpageComponent
+    InboxpageComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
