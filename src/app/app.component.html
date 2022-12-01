@@ -1,4 +1,13 @@
 <h1>{{title}}</h1>
 <mat-slide-toggle>Toggle me!</mat-slide-toggle>
 <app-inboxpage></app-inboxpage>
+
+<app-customer-list></app-customer-list>
+<h2>Example 2</h2>
+<input type="text" [(ngModel)]="name">
+<p> You entered {{name}}</p>
+<button (click)="clearValue()">Clear</button>
+
+
+
 <app-footer></app-footer>
