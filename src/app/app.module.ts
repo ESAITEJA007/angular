@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { InboxpageComponent } from './inboxpage/inboxpage.component';
 import { FormsModule } from '@angular/forms';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { TtclassDirective } from './ttclass.directive';
+import { TempConvertPipe } from './temp-convert.pipe';
 
 
 
@@ -17,7 +19,9 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     AppComponent,
     FooterComponent,
     InboxpageComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    TtclassDirective,
+    TempConvertPipe
   ],
   imports: [
     BrowserModule,

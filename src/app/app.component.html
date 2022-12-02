@@ -7,7 +7,10 @@
 <input type="text" [(ngModel)]="name">
 <p> You entered {{name}}</p>
 <button (click)="clearValue()">Clear</button>
-
-
+<br><br>
+<button [ttClass]="'blue'">Click Me</button>
+<br><br>
+<p> Fahrenheit : <input type="text" [(ngModel)]="Fahrenheit" /> 
+    Celsius : {{Fahrenheit | tempConvert:'C'}} </p>
 
 <app-footer></app-footer>
