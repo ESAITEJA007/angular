@@ -10,6 +10,7 @@ import { InboxpageComponent } from './inboxpage/inboxpage.component';
 import { FormsModule } from '@angular/forms';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { TtclassDirective } from './ttclass.directive';
+import { TempConvertPipe } from './temp-convert.pipe';
 
 
 
@@ -19,7 +20,8 @@ import { TtclassDirective } from './ttclass.directive';
     FooterComponent,
     InboxpageComponent,
     CustomerListComponent,
-    TtclassDirective
+    TtclassDirective,
+    TempConvertPipe
   ],
   imports: [
     BrowserModule,
